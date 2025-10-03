@@ -39,15 +39,13 @@ This project uses the Person Re-identification dataset with the following struct
 
 The dataset should be organized as:
 ```
-train/
-├── person_001/
-│   ├── img1.jpg
-│   ├── img2.jpg
-│   └── ...
-├── person_002/
-│   ├── img1.jpg
-│   └── ...
-└── train.csv
+Person-Re-Id-Dataset/
+├── train/
+│   │── img1.jpg
+│   │── img2.jpg
+│   │── ...
+│── train.csv
+│── utils.py
 ```
 
 ## 🏃‍♂️ Quick Start
@@ -57,10 +55,13 @@ train/
 1. **Prepare your dataset** following the structure above
 2. **Update configuration** in the notebook:
    ```python
-   DATA_DIR = '/path/to/your/dataset/train/'
-   CSV_FILE = '/path/to/your/dataset/train.csv'
+   # Dataset paths
+   DATA_DIR = 'Person-Re-Id-Dataset/train/'
+   CSV_FILE = 'Person-Re-Id-Dataset/train.csv'
+   
+   # Training hyperparameters
    BATCH_SIZE = 32
-   LR = 0.001
+   LR = 0.001  # Learning rate
    EPOCHS = 15
    ```
 
@@ -179,8 +180,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 **Venkata Satya Murali Krishna Chittlu**
-- Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: satyamuralikrishna13@gmail.com
+- Contact: +1 (520) 283-5536
+- GitHub: [@vsatyamuralikrishna](https://github.com/vsatyamuralikrishna)
 
 ---
 
